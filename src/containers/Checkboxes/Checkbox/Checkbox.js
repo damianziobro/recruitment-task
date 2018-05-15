@@ -3,7 +3,6 @@ import React from 'react';
 function Checkbox({ name, checked, disabled, onInputChange }) {
     return (
         <label htmlFor={name}>
-            {name}
             <input
                 type="checkbox"
                 id={name}
@@ -12,6 +11,7 @@ function Checkbox({ name, checked, disabled, onInputChange }) {
                 onChange={onInputChange}
                 disabled={disabled}
             />
+            {name}
         </label>
     );
 }

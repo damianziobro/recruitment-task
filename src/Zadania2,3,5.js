@@ -11,7 +11,7 @@ function isPalindrom(string) {
     return string == string.split('').reverse().join('');
 }
 
-//Zadanie 4
+//Zadanie 5
 
 class Kot {
     constructor(imie, waga) {

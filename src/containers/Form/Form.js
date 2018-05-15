@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import FormField from "../../components/FormField/FormField";
 
+import './Form.css';
+
 class Form extends Component {
   state = {
     inputValues: {},
@@ -98,9 +100,9 @@ class Form extends Component {
     return (
         <div className="container">
             {response}
-            <form onSubmit={this.handleFormSubmit}>
+            <form onSubmit={this.handleFormSubmit} className="form">
                 {formFields}
-                <input
+                <input className="form__submit"
                     type="submit"
                     value={sampleData.submit_text}
                     disabled={formLoading}

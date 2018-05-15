@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Checkbox from './Checkbox/Checkbox';
 
+import './Checkboxes.css';
+
 class Checkboxes extends Component {
     state = {
         inputs: [
@@ -72,7 +74,7 @@ class Checkboxes extends Component {
         });
 
         return (
-            <form onChange={this.handleInputChange}>
+            <form onChange={this.handleInputChange} className="checkboxes">
                 {checkboxes}
             </form>
         );
