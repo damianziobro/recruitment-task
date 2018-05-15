@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Logo from './containers/Logo/Logo';
 import Form from './containers/Form/Form';
 import Checkboxes from './containers/Checkboxes/Checkboxes';
 
@@ -44,9 +45,14 @@ class App extends Component {
     const { formSampleData } = this.state;
 
     return (
-      <div>
-        <Form sampleData={formSampleData} />
-        <Checkboxes />
+      <div className="app">
+        <header className="app__header">
+          <Logo />
+        </header>
+        <main className="app__main">
+          <Form sampleData={formSampleData} />
+          <Checkboxes />
+        </main>
       </div>
     )
   }
