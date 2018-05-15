@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Form from './containers/Form/Form';
+import Checkboxes from './containers/Checkboxes/Checkboxes';
 
 import './App.css';
 
@@ -45,6 +46,7 @@ class App extends Component {
     return (
       <div>
         <Form sampleData={formSampleData} />
+        <Checkboxes />
       </div>
     )
   }

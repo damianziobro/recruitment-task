@@ -11,6 +11,7 @@ function FormField({ field_name, label, required, type, value, loading, onInputC
                 type={type}
                 value={value}
                 id={field_name}
+                name={field_name}
                 onChange={onInputChange}
                 disabled={loading}
                 required={required}
